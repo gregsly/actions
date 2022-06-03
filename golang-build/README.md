@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
       - name: Make binaries
-        uses: gregsly/actions/golang-build@master
+        uses: gregsly/actions/golang-build@main
 ```
 
 Basic workflow configuration will compile binaries for the following platforms:
@@ -34,7 +34,7 @@ Alternatively you can provide a list of target architectures in `arg`:
 
 ```yml
 - name: Make binaries
-  uses: gregsly/actions/golang-build@master
+  uses: gregsly/actions/golang-build@main
   with:
     args: linux/amd64 darwin/amd64
 ```
