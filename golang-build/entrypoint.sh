@@ -40,4 +40,4 @@ done
 echo "----> Build is complete. List of files at $release_path:"
 cd $release_path
 pwd
-ls -al
+ls -al $PWD/*
